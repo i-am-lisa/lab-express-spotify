@@ -1,0 +1,6 @@
+<h1>Albums results</h1>
+{{#each data.body.items}}
+<div>{{this.name}}</div>
+<img src="{{this.images.0.url}}" alt="image">
+<a href='/albums/{{this.id}}/tracks' method="GET">View Tracks</a>
+{{/each}}
